@@ -18,3 +18,6 @@ package-lock.json
 
 # Ignore folders related to IDEs
 .vscode/
+
+# Local Jekyll preview config (sets url to localhost; must never be committed)
+_config_local.yml

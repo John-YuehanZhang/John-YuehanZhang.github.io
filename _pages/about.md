@@ -10,17 +10,17 @@ redirect_from:
 
 I am Yuehan Zhang, a bachelor's student at SCU and an intern at UCSD. My research interests focus on quantum computing.
 
-## Selected Publications
+## Selected Publications <small>(<sup>*</sup> means contributed equally)</small>
 
-| Authorship | Publication |
-|------------|-------------|
-| Co-first author | Keming He<sup>*</sup>, **Yuehan Zhang**<sup>*</sup>, Hongshun Yao, Jin-Guo Liu, and Xin Wang. "[Block Coordinate Descent for Dynamic Portfolio Optimization on Finite-Precision Coherent Ising Machines](https://arxiv.org/abs/2603.23200)." arXiv preprint arXiv:2603.23200 (2026). |
+| Publication |
+|-------------|
+| Keming He<sup>*</sup>, **Yuehan Zhang**<sup>*</sup>, Hongshun Yao, Jin-Guo Liu, and Xin Wang. "[Block Coordinate Descent for Dynamic Portfolio Optimization on Finite-Precision Coherent Ising Machines](https://arxiv.org/abs/2603.23200)." arXiv preprint arXiv:2603.23200 (2026). |
 
 ## Experience
 
 | Position | Organization | Duration |
 |----------|--------------|----------|
-| **Intern** | *University of California San Diego (UCSD)* | May 2026 - Present |
+| **Research Internship** | *University of California San Diego (UCSD)* | May 2026 - Present |
 | **Research Internship** | *The Hong Kong University of Science and Technology (GZ)* | Jul 2025 - May 2026 |
 
 ## Education
