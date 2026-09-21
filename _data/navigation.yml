@@ -11,9 +11,6 @@ main:
   - title: "Blog"
     url: /blog/
 
-  - title: "Life update"
-    url: /life/
-
   # - title: "Publications"
   #   url: /publications/
 
