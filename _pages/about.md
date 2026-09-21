@@ -23,6 +23,5 @@ I am John Yuehan Zhang, an undergraduate at Sichuan University and currently a v
 |---------------|-------------|-------|
 | **Bachelor of Engineering in Cyber Science and Engineering** | *Sichuan University* | Sep 2023 – Jun 2027 |
 | **Visiting Student** | *The Hong Kong University of Science and Technology (Guangzhou)* | Jul 2025 – Feb 2026 |
-| **Visiting Student** | *University of California, Berkeley* | May 2026 – Present |
+| **Visiting Student** | *University of California, Berkeley* | Currently |
 
-A PDF version of my CV is available [here](/files/CV_John_Yuehan_Zhang.pdf).
