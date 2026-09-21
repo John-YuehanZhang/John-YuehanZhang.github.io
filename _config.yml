@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Yuehan Zhang | Homepage" # Update this with the title of your site
+title                    : "John Yuehan Zhang | Homepage" # Update this with the title of your site
 title_separator          : "-"
-name                     : &name "Yuehan Zhang"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "John Yuehan Zhang"
+description              : &description "John Yuehan Zhang's academic homepage"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://john-yuehanzhang.github.io/ # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,13 +24,13 @@ repository               : "John-YuehanZhang/John-Yuehanzhang.github.io"
 author:
   # Biographic information
   avatar           : "https://raw.githubusercontent.com/John-YuehanZhang/John-Yuehanzhang.github.io/master/assets/images/profile.jpg"
-  name             : "Yuehan Zhang(张越涵)"
+  name             : "John Yuehan Zhang (张越涵)"
   pronouns         : ""  
-  bio              : "Email: johnzhang514145@gmail.com"
-  location         : "San Diego"
+  bio              : "Undergraduate, Sichuan University; visiting student, UC Berkeley"
+  location         : "Berkeley, CA"
   employer         : #""
   uri              : # URL
-  email            : "johnzhang514145@gmail.com" 
+  email            : "yuehanzhang6666@gmail.com" 
 
   # Academic websites
   # academia         : # URL

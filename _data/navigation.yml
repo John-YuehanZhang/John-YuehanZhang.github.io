@@ -29,8 +29,8 @@ main:
   # - title: "Blog Posts"
   #   url: /year-archive/
     
-  # - title: "CV"
-  #   url: /assets/CV_Yuehan_Zhang.pdf
+  - title: "CV"
+    url: /files/CV_John_Yuehan_Zhang.pdf
     
   # - title: "CV"
   #   url: /cv-json/
