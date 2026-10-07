@@ -101,6 +101,11 @@
     return res.json();
   }
 
+  // Before setup there is no vault yet: point to the setup page.
+  loadVault().then(function (v) {
+    if (!v) document.getElementById("pq-first-run").hidden = false;
+  }).catch(function () { /* the unlock attempt will report it */ });
+
   /* ---------- unlock / lock ---------- */
 
   lockForm.addEventListener("submit", async function (ev) {
