@@ -32,6 +32,14 @@
   var editingId = null;
   var editingDraft = "";
 
+  // Refuse to run inside a frame or a script-opened window: another page on this
+  // origin could otherwise read the password and the decrypted token.
+  if (window.top !== window.self || window.opener) {
+    lockMsg.textContent = "出于安全原因，这个页面只能直接打开（不能嵌在其他页面里或由脚本弹出）。";
+    unlockBtn.disabled = true;
+    return;
+  }
+
   if (!window.crypto || !crypto.subtle) {
     lockMsg.textContent = "这个浏览器不支持所需的加密功能，请换用新版浏览器并通过 https 打开。";
     unlockBtn.disabled = true;

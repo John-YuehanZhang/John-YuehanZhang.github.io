@@ -24,6 +24,14 @@
     msg.classList.toggle("pq-msg--error", !!isError);
   }
 
+  // Refuse to run inside a frame or a script-opened window: another page on this
+  // origin could otherwise read the password and the decrypted token.
+  if (window.top !== window.self || window.opener) {
+    msg.textContent = "出于安全原因，这个页面只能直接打开（不能嵌在其他页面里或由脚本弹出）。";
+    goBtn.disabled = true;
+    return;
+  }
+
   if (!window.crypto || !crypto.subtle) {
     say("这个浏览器不支持所需的加密功能，请换用新版浏览器并通过 https 打开。", true);
     goBtn.disabled = true;
