@@ -13,6 +13,7 @@ sitemap: false
       <input id="pq-password" type="password" autocomplete="current-password" required>
       <button type="submit" id="pq-unlock">进入</button>
     </div>
+    <label class="pq-remember"><input type="checkbox" id="pq-remember" checked> 在这台设备上 24 小时内不用再输密码</label>
     <p id="pq-lock-msg" class="pq-msg" role="status"></p>
     <p id="pq-first-run" class="pq-msg" hidden>还没有设置密码：<a href="{{ '/plan/setup/' | relative_url }}">去设置</a></p>
   </form>
@@ -51,6 +52,39 @@ sitemap: false
         <form class="pq-add"><input type="text" placeholder="添加一项…" maxlength="500"><button type="submit">添加</button></form>
       </section>
     </div>
+
+    <section class="pq-timeline" aria-label="时间轴">
+      <header><h2>时间轴</h2><span class="pq-hint">在象限里的任务上点右键，或用“移到…”里的“加入时间轴…”，也能加进来</span></header>
+      <ol id="pq-tl-list" class="pq-tl-list"></ol>
+      <form id="pq-tl-add" class="pq-tl-add">
+        <input type="text" id="pq-tl-text" placeholder="DDL 名称" maxlength="500" required>
+        <input type="date" id="pq-tl-date" required aria-label="日期">
+        <input type="time" id="pq-tl-time" aria-label="时间（可不填）">
+        <button type="submit">添加</button>
+      </form>
+    </section>
+  </div>
+
+  <div id="pq-menu" class="pq-menu" role="menu" hidden>
+    <button type="button" role="menuitem" id="pq-menu-tl">添加到时间轴…</button>
+  </div>
+
+  <div id="pq-dialog" class="pq-dialog" hidden>
+    <form id="pq-dialog-form" class="pq-dialog__box" role="dialog" aria-modal="true" aria-labelledby="pq-dialog-title">
+      <h3 id="pq-dialog-title">添加到时间轴</h3>
+      <label for="pq-dl-text">名称</label>
+      <input type="text" id="pq-dl-text" maxlength="500" required>
+      <div class="pq-dialog__row">
+        <div><label for="pq-dl-date">日期</label><input type="date" id="pq-dl-date" required></div>
+        <div><label for="pq-dl-time">时间（可不填）</label><input type="time" id="pq-dl-time"></div>
+      </div>
+      <div class="pq-dialog__actions">
+        <button type="button" id="pq-dl-delete" class="pq-btn-danger" hidden>删除</button>
+        <span class="pq-spacer"></span>
+        <button type="button" id="pq-dl-cancel">取消</button>
+        <button type="submit" id="pq-dl-ok">确定</button>
+      </div>
+    </form>
   </div>
 
   <noscript><p>这个页面需要启用 JavaScript。</p></noscript>
@@ -58,4 +92,5 @@ sitemap: false
 
 <script src="{{ '/assets/plan/plan-crypto.js' | relative_url }}"></script>
 <script src="{{ '/assets/plan/plan-github.js' | relative_url }}"></script>
+<script src="{{ '/assets/plan/plan-remember.js' | relative_url }}"></script>
 <script src="{{ '/assets/plan/plan.js' | relative_url }}"></script>

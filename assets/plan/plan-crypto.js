@@ -95,7 +95,19 @@
     return JSON.parse(decoder.decode(pt));
   }
 
+  // Plans with deadlines are sealed as "plan2", so a tab still running the old
+  // items-only code cannot open them and overwrite the deadlines. "plan" is still read.
+  var PLAN_PURPOSE = "plan2";
+
+  function openPlan(keyInfo, envelope) {
+    var p = envelope && envelope.purpose;
+    if (p !== "plan" && p !== PLAN_PURPOSE) return Promise.reject(new Error("bad envelope"));
+    return open(keyInfo, p, envelope);
+  }
+
   window.PlanCrypto = {
+    PLAN_PURPOSE: PLAN_PURPOSE,
+    openPlan: openPlan,
     newKey: newKey,
     keyFor: keyFor,
     seal: seal,

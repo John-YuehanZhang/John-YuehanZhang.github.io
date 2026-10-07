@@ -173,6 +173,157 @@
 .pq-add input { flex: 1; min-width: 0; margin: 0; font-size: 0.9em; }
 .pq-add button { flex: none; font-size: 0.85em; }
 
+.pq-remember { display: flex; align-items: center; gap: 0.4em; margin-top: 0.6em; font-size: 0.8em; color: var(--global-text-color-light); }
+.pq-remember input { margin: 0; }
+
+/* ---------- item date badge ---------- */
+
+.pq-badge {
+  flex: none;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  background: none;
+  padding: 0 0.5em;
+  font-size: 0.75em;
+  line-height: 1.6;
+  color: var(--global-text-color-light);
+  cursor: pointer;
+}
+.pq-badge--overdue { color: var(--pq-error); border-color: var(--pq-error); }
+.pq-badge--done { text-decoration: line-through; }
+
+/* ---------- timeline ---------- */
+
+.pq-timeline {
+  margin-top: 1.2em;
+  border: 1px solid var(--global-border-color);
+  border-top: 4px solid var(--global-link-color);
+  border-radius: 6px;
+  padding: 0.6em 0.8em 0.8em;
+}
+.pq-timeline header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  margin-bottom: 0.4em;
+}
+.pq-timeline h2 { margin: 0; padding: 0; border: 0; font-size: 1.05em; }
+
+.pq-tl-list {
+  list-style: none;
+  margin: 0 0 0.6em;
+  padding: 0 0 0 14px;
+  border-left: 2px solid var(--global-border-color);
+}
+.pq-tl-list li { margin: 0; }
+.pq-tl-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.4em 0;
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+.pq-tl-dot {
+  position: absolute;
+  left: -21px;  /* centre on the 2px line: -(14px padding + 1px) - half of the 12px dot */
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  top: 50%;
+  border-radius: 50%;
+  background: var(--global-bg-color);
+  border: 2px solid var(--global-link-color);
+}
+.pq-tl-item input[type="checkbox"] { flex: none; margin: 0; width: 1.05em; height: 1.05em; }
+.pq-tl-body { flex: 1; min-width: 0; }
+.pq-tl-when { font-size: 0.8em; color: var(--global-text-color-light); }
+.pq-tl-text { overflow-wrap: anywhere; }
+.pq-tl-left { flex: none; font-size: 0.8em; color: var(--global-text-color-light); }
+.pq-tl-edit {
+  flex: none;
+  background: none;
+  border: 0;
+  padding: 0 0.2em;
+  font-size: 0.8em;
+  color: var(--global-link-color);
+  cursor: pointer;
+}
+.pq-tl-item--soon .pq-tl-dot { border-color: var(--pq-q3); background: var(--pq-q3); }
+.pq-tl-item--soon .pq-tl-left { color: var(--pq-q3); font-weight: bold; }
+.pq-tl-item--overdue .pq-tl-dot { border-color: var(--pq-error); background: var(--pq-error); }
+.pq-tl-item--overdue .pq-tl-left { color: var(--pq-error); font-weight: bold; }
+.pq-tl-item--done .pq-tl-dot { border-color: var(--global-border-color); }
+.pq-tl-item--done .pq-tl-text { text-decoration: line-through; color: var(--global-text-color-light); }
+.pq-tl-today {
+  margin: 0.3em 0 !important;
+  font-size: 0.75em;
+  font-weight: bold;
+  color: var(--global-link-color);
+}
+
+.pq-tl-add { display: flex; gap: 0.4em; flex-wrap: wrap; margin: 0; }
+.pq-tl-add input { margin: 0; font-size: 0.9em; }
+.pq-tl-add input[type="text"] { flex: 1 1 10em; min-width: 0; }
+.pq-tl-add input[type="date"], .pq-tl-add input[type="time"] { flex: none; width: auto; }
+.pq-tl-add button { flex: none; font-size: 0.85em; }
+
+/* ---------- right-click menu and dialog ---------- */
+
+.pq-menu {
+  position: fixed;
+  z-index: 30;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-dark-border-color);
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  padding: 0.25em;
+}
+.pq-menu button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: 0;
+  padding: 0.4em 0.9em;
+  text-align: left;
+  font-size: 0.9em;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.pq-menu button:hover, .pq-menu button:focus { background: var(--global-code-background-color); }
+
+.pq-dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.pq-dialog__box {
+  background: var(--global-bg-color);
+  border-radius: 8px;
+  padding: 1em 1.2em;
+  width: 100%;
+  max-width: 26em;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+.pq-dialog__box h3 { margin: 0 0 0.6em; font-size: 1.05em; }
+.pq-dialog__box label { display: block; margin: 0.5em 0 0.2em; font-size: 0.85em; }
+.pq-dialog__box input { width: 100%; margin: 0; }
+.pq-dialog__row { display: flex; gap: 0.6em; }
+.pq-dialog__row > div { flex: 1; min-width: 0; }
+.pq-dialog__actions { display: flex; gap: 0.5em; margin-top: 1em; align-items: center; }
+.pq-spacer { flex: 1; }
+.pq-btn-danger { color: var(--pq-error); }
+
 /* ---------- setup page ---------- */
 
 .pq-setup { max-width: 34em; }
@@ -189,5 +340,6 @@
 
 /* iOS Safari zooms into any text field under 16px when it gets focus. */
 @media (max-width: 640px) {
-  .pq-add input, .pq-edit, .pq-move, .pq-lock input, .pq-setup input { font-size: 16px; }
+  .pq-add input, .pq-edit, .pq-move, .pq-lock input, .pq-setup input,
+  .pq-tl-add input, .pq-dialog__box input { font-size: 16px; }
 }

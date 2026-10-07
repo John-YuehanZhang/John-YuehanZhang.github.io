@@ -8,6 +8,8 @@
   var C = window.PlanCrypto;
   var G = window.PlanGitHub;
 
+  window.PlanRemember.load();  // deletes an expired "remember this device" record
+
   var root = document.getElementById("pq-setup");
   var form = document.getElementById("pq-setup-form");
   var tokenIn = document.getElementById("pq-token");
@@ -76,7 +78,7 @@
         // Renewing the token: the password must still open the existing plan.
         keyInfo = await C.keyFor(password, file.envelope);
         try {
-          await C.open(keyInfo, "plan", file.envelope);
+          await C.openPlan(keyInfo, file.envelope);
         } catch (e) {
           if (!oldPassword) {
             say("这个密码解不开已有的计划。只更新令牌时请用原来的密码；要改密码，请在“原密码”一栏填旧密码。", true);
@@ -85,13 +87,13 @@
           // Changing the password: re-encrypt the plan under the new one.
           var plan;
           try {
-            plan = await C.open(await C.keyFor(oldPassword, file.envelope), "plan", file.envelope);
+            plan = await C.openPlan(await C.keyFor(oldPassword, file.envelope), file.envelope);
           } catch (e2) {
             say("原密码不对，解不开已有的计划。", true);
             return;
           }
           keyInfo = await C.newKey(password);
-          await G.writeFile(cfg, await C.seal(keyInfo, "plan", plan), file.sha);
+          await G.writeFile(cfg, await C.seal(keyInfo, file.envelope.purpose, plan), file.sha);
           rekeyed = true;
         }
       } else {
