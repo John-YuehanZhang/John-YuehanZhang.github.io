@@ -12,10 +12,12 @@ I am John Yuehan Zhang, an undergraduate at Sichuan University. My research inte
 
 ## Publications <small>(<sup>&#42;</sup> equal contribution)</small>
 
-| Publication |
-|-------------|
-| [1] **John Yuehan Zhang**. *CircLS: Compiling Lattice Surgery to Physical Circuits with Dynamic Allocation*. arXiv:2608.23819, 2026. [[paper](https://scirate.com/arxiv/2608.23819)] [[code](https://github.com/John-YuehanZhang/CircLS)] |
-| [2] Keming He<sup>&#42;</sup>, **Yuehan Zhang**<sup>&#42;</sup>, Hongshun Yao, Jin-Guo Liu, and Xin Wang. *Block Coordinate Descent for Dynamic Portfolio Optimization on Finite-Precision Coherent Ising Machines*. arXiv:2603.23200, 2026. [[paper](https://scirate.com/arxiv/2603.23200)] |
+<table>
+<tbody>
+<tr><td>[1] <strong>John Yuehan Zhang</strong>. <em>CircLS: Compiling Lattice Surgery to Physical Circuits with Dynamic Allocation</em>. arXiv:2608.23819, 2026. [<a href="https://scirate.com/arxiv/2608.23819">paper</a>] [<a href="https://github.com/John-YuehanZhang/CircLS">code</a>]</td></tr>
+<tr><td>[2] Keming He<sup>&#42;</sup>, <strong>Yuehan Zhang</strong><sup>&#42;</sup>, Hongshun Yao, Jin-Guo Liu, and Xin Wang. <em>Block Coordinate Descent for Dynamic Portfolio Optimization on Finite-Precision Coherent Ising Machines</em>. arXiv:2603.23200, 2026. [<a href="https://scirate.com/arxiv/2603.23200">paper</a>]</td></tr>
+</tbody>
+</table>
 
 ## Education
 
