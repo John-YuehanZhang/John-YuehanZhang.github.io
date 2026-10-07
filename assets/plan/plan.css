@@ -1,0 +1,193 @@
+/* /plan/ and /plan/setup/ — uses the site theme's CSS variables. */
+
+#plan-app, .pq-setup {
+  --pq-q1: #d9534f;
+  --pq-q2: #2e9d5b;
+  --pq-q3: #e0a020;
+  --pq-q4: #8a9197;
+  --pq-error: #c0392b;
+}
+
+#plan-app [hidden], .pq-setup [hidden] { display: none !important; }
+
+/* Standalone page shell (_layouts/plan.html). */
+.pq-body { background: var(--global-bg-color); margin: 0; padding: 0; }
+.pq-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1em 16px 3em;
+}
+.pq-home { margin: 0 0 1em; font-size: 0.85em; }
+.pq-home a { text-decoration: none; }
+.pq-title { margin: 0 0 0.6em; }
+
+/* ---------- lock screen ---------- */
+
+.pq-lock {
+  max-width: 22em;
+  margin: 2em auto;
+}
+.pq-lock label { display: block; margin-bottom: 0.5em; }
+.pq-lock__row { display: flex; gap: 0.5em; }
+.pq-lock__row input { flex: 1; min-width: 0; margin: 0; }
+.pq-lock__row button { white-space: nowrap; }
+
+.pq-msg { min-height: 1.5em; margin-top: 0.75em; font-size: 0.9em; }
+.pq-msg--error { color: var(--pq-error); }
+
+/* ---------- board ---------- */
+
+.pq-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  margin-bottom: 0.75em;
+  font-size: 0.85em;
+}
+.pq-status { color: var(--global-text-color-light); }
+.pq-status--error { color: var(--pq-error); }
+
+.pq-btn-plain {
+  background: none;
+  border: 1px solid var(--global-border-color);
+  border-radius: 4px;
+  padding: 0.25em 0.9em;
+  cursor: pointer;
+  color: inherit;
+  font-size: inherit;
+}
+
+.pq-conflict {
+  border: 1px solid var(--pq-error);
+  border-radius: 6px;
+  padding: 0.75em 1em;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+.pq-conflict p { margin: 0 0 0.5em; }
+.pq-conflict button { margin: 0.25em 0.5em 0.25em 0; }
+
+.pq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75em;
+}
+@media (max-width: 640px) {
+  .pq-grid { grid-template-columns: 1fr; }
+}
+
+.pq-quad {
+  border: 1px solid var(--global-border-color);
+  border-top: 4px solid var(--pq-color);
+  border-radius: 6px;
+  padding: 0.6em 0.8em 0.8em;
+  min-height: 12em;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.pq-q1 { --pq-color: var(--pq-q1); }
+.pq-q2 { --pq-color: var(--pq-q2); }
+.pq-q3 { --pq-color: var(--pq-q3); }
+.pq-q4 { --pq-color: var(--pq-q4); }
+.pq-quad--over { background: var(--global-code-background-color); }
+
+.pq-quad header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5em;
+  margin-bottom: 0.4em;
+}
+.pq-quad h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1.05em;
+  color: var(--pq-color);
+}
+.pq-hint { font-size: 0.75em; color: var(--global-text-color-light); }
+
+.pq-list {
+  list-style: none;
+  margin: 0 0 0.5em;
+  padding: 0;
+  flex: 1;
+}
+.pq-list li { margin: 0; }
+
+.pq-empty {
+  color: var(--global-text-color-light);
+  font-size: 0.85em;
+  padding: 0.3em 0;
+}
+
+.pq-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.3em 0;
+  border-bottom: 1px dashed var(--global-border-color);
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+.pq-item input[type="checkbox"] { flex: none; margin: 0; width: 1.05em; height: 1.05em; }
+.pq-text {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  cursor: text;
+}
+.pq-item--done .pq-text {
+  text-decoration: line-through;
+  color: var(--global-text-color-light);
+}
+.pq-edit { flex: 1; min-width: 0; margin: 0; padding: 0.15em 0.3em; font-size: inherit; }
+
+.pq-move {
+  flex: none;
+  width: auto;
+  max-width: 5.5em;
+  margin: 0;
+  padding: 0.1em;
+  font-size: 0.8em;
+  color: var(--global-text-color-light);
+  background: transparent;
+  border: 1px solid var(--global-border-color);
+  border-radius: 4px;
+}
+.pq-del {
+  flex: none;
+  background: none;
+  border: 0;
+  padding: 0 0.3em;
+  font-size: 1.2em;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--global-text-color-light);
+}
+.pq-del:hover { color: var(--pq-error); }
+
+.pq-add { display: flex; gap: 0.4em; margin: 0; }
+.pq-add input { flex: 1; min-width: 0; margin: 0; font-size: 0.9em; }
+.pq-add button { flex: none; font-size: 0.85em; }
+
+/* ---------- setup page ---------- */
+
+.pq-setup { max-width: 34em; }
+.pq-setup label { display: block; margin-top: 0.9em; }
+.pq-setup input { width: 100%; }
+.pq-setup textarea {
+  width: 100%;
+  min-height: 9em;
+  font-family: monospace;
+  font-size: 0.8em;
+  overflow-wrap: anywhere;
+}
+.pq-setup .pq-actions { margin-top: 1em; display: flex; gap: 0.5em; flex-wrap: wrap; }
+
+/* iOS Safari zooms into any text field under 16px when it gets focus. */
+@media (max-width: 640px) {
+  .pq-add input, .pq-edit, .pq-move, .pq-lock input, .pq-setup input { font-size: 16px; }
+}

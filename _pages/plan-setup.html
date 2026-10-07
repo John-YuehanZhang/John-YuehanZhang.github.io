@@ -1,0 +1,40 @@
+---
+permalink: /plan/setup/
+title: "计划设置"
+layout: plan
+sitemap: false
+---
+
+<div class="pq-setup" id="pq-setup" data-owner="John-YuehanZhang" data-repo="plan" data-path="plan.json">
+  <p>在这里用你的密码加密 GitHub 令牌。令牌和密码只在这个浏览器里使用，不会发送到别处（验证令牌时只发给 GitHub）。</p>
+
+  <form id="pq-setup-form" autocomplete="off">
+    <label for="pq-token">GitHub 令牌（github_pat_ 开头）</label>
+    <input id="pq-token" type="password" autocomplete="off" spellcheck="false" required>
+
+    <label for="pq-pw1">密码（至少 8 位）</label>
+    <input id="pq-pw1" type="password" autocomplete="new-password" minlength="8" required>
+
+    <label for="pq-pw2">再输一次密码</label>
+    <input id="pq-pw2" type="password" autocomplete="new-password" required>
+
+    <label for="pq-oldpw">原密码（只有修改密码时才填，否则留空）</label>
+    <input id="pq-oldpw" type="password" autocomplete="current-password">
+
+    <div class="pq-actions"><button type="submit" id="pq-setup-go">生成</button></div>
+    <p id="pq-setup-msg" class="pq-msg" role="status"></p>
+  </form>
+
+  <div id="pq-setup-out" hidden>
+    <p>下面这段是加密后的内容，没有密码无法解开，可以放心发给 Claude，它会把它提交为 <code>assets/plan/vault.json</code>。</p>
+    <textarea id="pq-vault" readonly></textarea>
+    <div class="pq-actions">
+      <button type="button" id="pq-copy">复制</button>
+      <button type="button" id="pq-download">下载 vault.json</button>
+    </div>
+  </div>
+</div>
+
+<script src="{{ '/assets/plan/plan-crypto.js' | relative_url }}"></script>
+<script src="{{ '/assets/plan/plan-github.js' | relative_url }}"></script>
+<script src="{{ '/assets/plan/plan-setup.js' | relative_url }}"></script>

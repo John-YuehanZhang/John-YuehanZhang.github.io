@@ -1,0 +1,29 @@
+---
+layout: compress
+---
+{% comment %}
+  Standalone layout for /plan/ and /plan/setup/. These pages handle the password,
+  the decrypted GitHub token and the plan, so they load no third-party scripts
+  (no analytics, MathJax, Mermaid, Plotly) and the CSP only allows this site's
+  own scripts and the GitHub API.
+{% endcomment %}
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.github.com; base-uri 'none'; form-action 'none'">
+    <meta name="referrer" content="no-referrer">
+    <meta name="robots" content="noindex, nofollow">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/plan/plan.css' | relative_url }}">
+  </head>
+  <body class="pq-body">
+    <div class="pq-page">
+      <p class="pq-home"><a href="{{ '/' | relative_url }}">← {{ site.title }}</a></p>
+      <h1 class="pq-title">{{ page.title }}</h1>
+      {{ content }}
+    </div>
+  </body>
+</html>

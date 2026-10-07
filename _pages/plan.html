@@ -1,0 +1,60 @@
+---
+permalink: /plan/
+title: "我的计划"
+layout: plan
+sitemap: false
+---
+
+<div id="plan-app" data-vault="{{ '/assets/plan/vault.json' | relative_url }}">
+
+  <form id="pq-lock" class="pq-lock" autocomplete="off">
+    <label for="pq-password">请输入密码</label>
+    <div class="pq-lock__row">
+      <input id="pq-password" type="password" autocomplete="current-password" required>
+      <button type="submit" id="pq-unlock">进入</button>
+    </div>
+    <p id="pq-lock-msg" class="pq-msg" role="status"></p>
+  </form>
+
+  <div id="pq-board" class="pq-board" hidden>
+    <div class="pq-toolbar">
+      <span id="pq-status" class="pq-status" role="status"></span>
+      <button type="button" id="pq-lock-btn" class="pq-btn-plain">锁定</button>
+    </div>
+
+    <div id="pq-conflict" class="pq-conflict" hidden>
+      <p>这份计划在其他设备上被修改过，本机的改动还没保存。</p>
+      <button type="button" id="pq-take-remote">载入最新版本（放弃本机改动）</button>
+      <button type="button" id="pq-keep-local">用本机版本覆盖</button>
+    </div>
+
+    <div class="pq-grid">
+      <section class="pq-quad pq-q1" data-q="1">
+        <header><h2>重要且紧急</h2><span class="pq-hint">马上做</span></header>
+        <ul class="pq-list"></ul>
+        <form class="pq-add"><input type="text" placeholder="添加一项…" maxlength="500"><button type="submit">添加</button></form>
+      </section>
+      <section class="pq-quad pq-q2" data-q="2">
+        <header><h2>重要但不紧急</h2><span class="pq-hint">计划做</span></header>
+        <ul class="pq-list"></ul>
+        <form class="pq-add"><input type="text" placeholder="添加一项…" maxlength="500"><button type="submit">添加</button></form>
+      </section>
+      <section class="pq-quad pq-q3" data-q="3">
+        <header><h2>紧急但不重要</h2><span class="pq-hint">交给别人或快速处理</span></header>
+        <ul class="pq-list"></ul>
+        <form class="pq-add"><input type="text" placeholder="添加一项…" maxlength="500"><button type="submit">添加</button></form>
+      </section>
+      <section class="pq-quad pq-q4" data-q="4">
+        <header><h2>不紧急也不重要</h2><span class="pq-hint">少做或不做</span></header>
+        <ul class="pq-list"></ul>
+        <form class="pq-add"><input type="text" placeholder="添加一项…" maxlength="500"><button type="submit">添加</button></form>
+      </section>
+    </div>
+  </div>
+
+  <noscript><p>这个页面需要启用 JavaScript。</p></noscript>
+</div>
+
+<script src="{{ '/assets/plan/plan-crypto.js' | relative_url }}"></script>
+<script src="{{ '/assets/plan/plan-github.js' | relative_url }}"></script>
+<script src="{{ '/assets/plan/plan.js' | relative_url }}"></script>
