@@ -24,9 +24,9 @@ repository               : "John-YuehanZhang/John-Yuehanzhang.github.io"
 author:
   # Biographic information
   avatar           : "https://raw.githubusercontent.com/John-YuehanZhang/John-Yuehanzhang.github.io/master/assets/images/profile.jpg"
-  name             : "John Yuehan Zhang (张越涵)"
+  name             : "John Yuehan Zhang"
   pronouns         : ""  
-  bio              : "Email: yuehanzhang6666@gmail.com"
+  bio              : 
   location         : 
   employer         : #""
   uri              : # URL
