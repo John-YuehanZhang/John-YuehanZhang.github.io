@@ -8,7 +8,7 @@ redirect_from:
 ---
 ## About Me
 
-I am John Yuehan Zhang, an undergraduate at Sichuan University. My research interests are fault-tolerant quantum computing, quantum error correction, and quantum computing architecture and compiler. My email is yuehanzhang6666@gmail.com.
+I am John Yuehan Zhang, an undergraduate at Sichuan University. My research interests are fault-tolerant quantum computing and quantum error correction. My email is yuehanzhang6666@gmail.com.
 
 ## Publications <small>(<sup>&#42;</sup> equal contribution)</small>
 
