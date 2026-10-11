@@ -8,7 +8,7 @@ redirect_from:
 ---
 ## About Me
 
-I am John Yuehan Zhang, an undergraduate at Sichuan University. My research interests are fault-tolerant quantum computing and quantum error correction. My email is yuehanzhang6666@gmail.com.
+I am John Yuehan Zhang. My research interests are fault-tolerant quantum computing and quantum error correction. My email is yuehanzhang6666@gmail.com.
 
 ## Publications <small>(<sup>&#42;</sup> equal contribution)</small>
 
@@ -23,7 +23,7 @@ I am John Yuehan Zhang, an undergraduate at Sichuan University. My research inte
 
 <table>
 <thead>
-<tr><th><a href="https://github.com/QuTone/LightStim">LightStim</a></th></tr>
+<tr><th><a href="https://github.com/QuTone/LightStim">LightStim</a>: <span style="font-weight: normal">A QEC Evaluator built on Stim. Automated DEM construction.</span></th></tr>
 </thead>
 <tbody>
 <tr><td>[<a href="https://github.com/QuTone/LightStim/pull/107">#107</a>] HGP codes: fold-transversal H-SWAP and CZ-S gates. Oct 2026.</td></tr>
