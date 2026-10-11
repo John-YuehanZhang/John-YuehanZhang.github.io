@@ -41,3 +41,4 @@ I am John Yuehan Zhang. My research interests are fault-tolerant quantum computi
 | **Undergraduate** | *Sichuan University* | Sep 2023 – Jun 2027 |
 | **Visiting Student** | *The Hong Kong University of Science and Technology (Guangzhou)* | Jul 2025 – Feb 2026 |
 
+<p style="text-align: center; margin-top: 2em"><a href="https://mapmyvisitors.com/web/1c8t1" title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?d=0Li2J0S3hSy4opzGoQW92tly9z27oiTGjxVZVlwCLt8&cl=ffffff" alt="Visitor map"></a></p>
