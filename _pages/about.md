@@ -23,14 +23,14 @@ I am John Yuehan Zhang. My research interests are fault-tolerant quantum computi
 
 <table>
 <thead>
-<tr><th><a href="https://github.com/QuTone/LightStim">LightStim</a>: <span style="font-weight: normal">A QEC Evaluator built on Stim. Automated DEM construction.</span></th></tr>
+<tr><th><a href="https://github.com/QuTone/LightStim" style="font-size: 1.2em; text-decoration: none">LightStim</a>: <span style="font-weight: normal">A QEC Evaluator built on Stim. Automated DEM construction.</span></th></tr>
 </thead>
 <tbody>
-<tr><td>[<a href="https://github.com/QuTone/LightStim/pull/107">#107</a>] HGP codes: fold-transversal H-SWAP and CZ-S gates. Oct 2026.</td></tr>
-<tr><td>[<a href="https://github.com/QuTone/LightStim/pull/75">#75</a>] Tracker: absorbed-logical census and centralized observable allocation. Aug 2026.</td></tr>
-<tr><td>[<a href="https://github.com/QuTone/LightStim/pull/47">#47</a>] Lattice-surgery CNOT, transversal CNOT, and transversal H for the rotated surface code. Jun 2026.</td></tr>
-<tr><td>[<a href="https://github.com/QuTone/LightStim/pull/41">#41</a>] Rotated XZZX code with a checkerboard-basis memory experiment. Jun 2026.</td></tr>
-<tr><td>[<a href="https://github.com/QuTone/LightStim/pull/32">#32</a>] Selectable 4-tick and 6-tick syndrome-extraction schedules for unrotated and toric codes. Jun 2026.</td></tr>
+<tr><td>[<a href="https://github.com/QuTone/LightStim/pull/107">PR #107</a>] HGP codes: fold-transversal H-SWAP and CZ-S gates. Oct 2026.</td></tr>
+<tr><td>[<a href="https://github.com/QuTone/LightStim/pull/75">PR #75</a>] Tracker: absorbed-logical census and centralized observable allocation. Aug 2026.</td></tr>
+<tr><td>[<a href="https://github.com/QuTone/LightStim/pull/47">PR #47</a>] Lattice-surgery CNOT, transversal CNOT, and transversal H for the rotated surface code. Jun 2026.</td></tr>
+<tr><td>[<a href="https://github.com/QuTone/LightStim/pull/41">PR #41</a>] Rotated XZZX code with a checkerboard-basis memory experiment. Jun 2026.</td></tr>
+<tr><td>[<a href="https://github.com/QuTone/LightStim/pull/32">PR #32</a>] Selectable 4-tick and 6-tick syndrome-extraction schedules for unrotated and toric codes. Jun 2026.</td></tr>
 </tbody>
 </table>
 
