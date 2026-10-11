@@ -155,9 +155,9 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-analytics-4"
+  provider               :  false  # Google Analytics removed: /plan/ keeps keys this origin's scripts could use
   google:
-    tracking_id          :  "G-KHDZPXDC4B"
+    tracking_id          :
 
 
 # Reading Files
