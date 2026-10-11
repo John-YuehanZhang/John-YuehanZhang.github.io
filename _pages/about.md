@@ -19,6 +19,20 @@ I am John Yuehan Zhang, an undergraduate at Sichuan University. My research inte
 </tbody>
 </table>
 
+## Open-Source Contributions
+
+Merged pull requests to [LightStim](https://github.com/QuTone/LightStim), a QEC evaluator built on Stim with automated detector error model construction.
+
+<table>
+<tbody>
+<tr><td>[<a href="https://github.com/QuTone/LightStim/pull/107">#107</a>] HGP codes: fold-transversal H-SWAP and CZ-S gates. Oct 2026.</td></tr>
+<tr><td>[<a href="https://github.com/QuTone/LightStim/pull/75">#75</a>] Tracker: absorbed-logical census and centralized observable allocation. Aug 2026.</td></tr>
+<tr><td>[<a href="https://github.com/QuTone/LightStim/pull/47">#47</a>] Lattice-surgery CNOT, transversal CNOT, and transversal H for the rotated surface code. Jun 2026.</td></tr>
+<tr><td>[<a href="https://github.com/QuTone/LightStim/pull/41">#41</a>] Rotated XZZX code with a checkerboard-basis memory experiment. Jun 2026.</td></tr>
+<tr><td>[<a href="https://github.com/QuTone/LightStim/pull/32">#32</a>] Selectable 4-tick and 6-tick syndrome-extraction schedules for unrotated and toric codes. Jun 2026.</td></tr>
+</tbody>
+</table>
+
 ## Education
 
 | Degree / Role | Institution | Years |
