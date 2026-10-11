@@ -21,9 +21,10 @@ I am John Yuehan Zhang, an undergraduate at Sichuan University. My research inte
 
 ## Open-Source Contributions
 
-Merged pull requests to [LightStim](https://github.com/QuTone/LightStim), a QEC evaluator built on Stim with automated detector error model construction.
-
 <table>
+<thead>
+<tr><th><a href="https://github.com/QuTone/LightStim">LightStim</a></th></tr>
+</thead>
 <tbody>
 <tr><td>[<a href="https://github.com/QuTone/LightStim/pull/107">#107</a>] HGP codes: fold-transversal H-SWAP and CZ-S gates. Oct 2026.</td></tr>
 <tr><td>[<a href="https://github.com/QuTone/LightStim/pull/75">#75</a>] Tracker: absorbed-logical census and centralized observable allocation. Aug 2026.</td></tr>
