@@ -33,10 +33,3 @@ I am John Yuehan Zhang. My research interests are fault-tolerant quantum computi
 <tr><td>[<a href="https://github.com/QuTone/LightStim/pull/32">PR #32</a>] Selectable 4-tick and 6-tick syndrome-extraction schedules for unrotated and toric codes. Jun 2026.</td></tr>
 </tbody>
 </table>
-
-## Education
-
-| Degree / Role | Institution | Years |
-|---------------|-------------|-------|
-| **Undergraduate** | *Sichuan University* | Sep 2023 – Jun 2027 |
-| **Visiting Student** | *The Hong Kong University of Science and Technology (Guangzhou)* | Jul 2025 – Feb 2026 |
