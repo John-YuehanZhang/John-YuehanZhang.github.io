@@ -14,8 +14,8 @@ I am John Yuehan Zhang. My research interests are fault-tolerant quantum computi
 
 <table>
 <tbody>
-<tr><td>[1] <strong>John Yuehan Zhang</strong>. <em>CircLS: Compiling Lattice Surgery to Physical Circuits with Dynamic Allocation</em>. arXiv:2608.23819, 2026. [<a href="https://scirate.com/arxiv/2608.23819">paper</a>] [<a href="https://github.com/John-YuehanZhang/CircLS">code</a>]</td></tr>
-<tr><td>[2] Keming He<sup>&#42;</sup>, <strong>Yuehan Zhang</strong><sup>&#42;</sup>, Hongshun Yao, Jin-Guo Liu, and Xin Wang. <em>Block Coordinate Descent for Dynamic Portfolio Optimization on Finite-Precision Coherent Ising Machines</em>. arXiv:2603.23200, 2026. [<a href="https://scirate.com/arxiv/2603.23200">paper</a>]</td></tr>
+<tr><td>[1] <strong>John Yuehan Zhang</strong>. <em>CircLS: Compiling Lattice Surgery to Physical Circuits with Dynamic Allocation</em>. arXiv:2608.23819, 2026. [<a href="https://arxiv.org/abs/2608.23819">paper</a>] [<a href="https://github.com/John-YuehanZhang/CircLS">code</a>]</td></tr>
+<tr><td>[2] Keming He<sup>&#42;</sup>, <strong>Yuehan Zhang</strong><sup>&#42;</sup>, Hongshun Yao, Jin-Guo Liu, and Xin Wang. <em>Block Coordinate Descent for Dynamic Portfolio Optimization on Finite-Precision Coherent Ising Machines</em>. arXiv:2603.23200, 2026. [<a href="https://arxiv.org/abs/2603.23200">paper</a>]</td></tr>
 </tbody>
 </table>
 
